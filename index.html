@@ -1,301 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Dave Gray">
-        <meta name="description" content="This page contains
- all the  things I am learn how to create as i learn HTML.">
- <title>My First web page</title>
- <link rel="icon" href="html5.png" type="image/x-icon">
- <link rel="stylesheet" href="main.cs" type="textlcss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publishing Company - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css' integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
 </head>
-    <body> 
-        <header>
-        <h1>My goal for the year</h1>
-
-        
-
-        <nav aria-label="primary-navigation">
-            <ul>
-                <li>
-                    <a href="#html">Learn HTML</a>
-                </li>
-<                <li>
-                    <a href="#vacation">Planning a vacaation</a>
-                </li>
-<                <li>
-                    <a href="#contact">contact me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
+<body>
+    <div class="top-bar">
+        <div class="nav-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="logo">
+            <img src="./Logo.png" alt="Logo">
+        </div>
+        <div class="search-input">
+            <input type="search" name="" id="">
+            <button>SEARCH</button>
+        </div>
+    </div>
+    <nav class="nav-sticky">
+        <a href="#section-1">Home</a>
+        <a href="#section-3">About</a>
+        <a href="#section-4">New Releases</a>
+        <a href="#footer">Contact</a>
+    </nav>
     <main>
-        <article id="html"></article>
-
-        <h2>I am ready to learn HTML</h2>
-        <p>This is my firsh web page.</p>
-        <section>
-            <h3>HTML5</h3>
-        <img src="images/html5.png" alt="html5_logo" title="html5_logo." width="167" height="148" loading="lazy">
-        <figure>
-            <figcaption>An example of html5 code
-                <p>
-                    <code>&lt;h1&gt;Hello...&lt;h1&gt;</code>
-                </p>
-            
-        </figure>
+        <section class="section-1" id="section-1">
+            <div class="section-1-content">
+                <h1>Good books don't give up all their secrets at once</h1>
+                <p>A small river named Duden flows by their place and supplies it <br>
+                    with the necessary regelialia.</p>
+                <button class="view-btn">View All Books</button>
+                <button class="explore-btn">Explore Now</button>
+            </div>
         </section>
-        <h3>My Daily schedul</h3>
-        <p>Let me tell you how:</p>
-        <ol>
-            <li>...I learn more about web dev. </li>
-            <li>...I plan out my schedule.</li>
-            <li>...I use from resources<abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr></li>
-        </ol>
-        <aside>
-            <details>
-                <summary>
-                    Guess the <mark>number of hours</mark> i code per day
-                </summary>
-                <p>I start at<time datetime="08:00">8 am</time>and I write code for <time datetime="PT3H"> 3 hours</time> every morning.</p>
-                
-            </details>
-        </aside>
-        <br>
-        <table>
-            <caption>My Daily schedule</caption>
-            <thead>
-            <tr>
-                <th>&nbsp;</th>
-                <th id="time" scope="col">
-                    Time
-                </th>
-                <th id="activity" scope="col">activity</th>
-            </tr>
-         </thead>
-         <tbody>
-            
-            <tr>
-                <th id="morning" scope="row"> Morning</th>
-              <td headers="">
-                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time> 
-                </td>
-                <td>write code</td>
-            </tr>
-            <tr>
-                <th id="break" scope="row">Break</th>
-              <td>
-                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time> 
-                </td>
-                <td>Eat Lunch</td>
-            </tr>
-            <tr>
-                <th id="Afternoon" scope="row">Afternoon</th>
-              <td>
-                    <time datetime="12:00">12pm</time>-<time datetime="17:00">17pm</time> 
-                </td>
-                <td>Time to read another course</td>
-            </tr>
-            <tr>
-                <th id="Evening" scope="row">Evening</th>
-                <td rowspan="2">All other times</td>
-                <td>Free time</td>
-            </tr>
-            <tr>
-                <th id="night" scope="row">Night</th>
-                <td>
-                    Sleep
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">And that's what I do every day a week.Just eat,sleep,code..and recharge!
-
-                </td>
-            </tr>
-        </tfoot>
-        </table>
-    </section>
-</article>
-
-    <hr>
-    <article id="vacation">
-
-        <h2>I am also planning vacation</h2>
-        <p>I've been working hard and<em>really need a getaway</em>.</p>
-        
-        <figure>
-            <figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello...&lt;h1&gt;</code>
-                </p>
-            </figcaption>
-        <img src="images/vacation.png" alt="vacationplanning" title="I want to getaway" width="600" height="400" loading="lazy">
-        </figure>
-        <section>
-            <h3>places i'd like to visit</h3>
-            <ul>
-                <li>
-         <p>I have been working hard and <em>really need a getaway</em></p>
-                <p>I'have heard good things about going here:</p>
-                <figure>
-                <img src="images/carbbean.png" alt="caribbenBeach" title="I want to visit beach" width="600" height="400" loading="lazy">
-                
-                <figcaption>caribbean beach getaway</figcaption>
-            </figure>
-            </li>
-            <li>
-                <p>
-                    i've heard good things about going hear:
-                </p>
-                <address>
-                    Margaritaville island reserve Rivera Cancun<br>
-                    bahia petempich pyerto morelos.mexic<br>
-                    colonia morelos,mexico 7756
-                </address>
-                <figure>
-                    <img src="images/vacation.png" alt="Cancun vacation" title="It's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
-                    <figcaption>
-                        A caribbean vacation image
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
+        <section class="section-2" id="section-2">
+            <div class="section-2-content">
+                <h2>75463</h2>
+                <p>Active Readers</p>
+            </div>
+            <div class="section-2-content">
+                <h2>3040</h2>
+                <p>Total Pages</p>
+            </div>
+            <div class="section-2-content">
+                <h2>283</h2>
+                <p>Cup of coffee</p>
+            </div>
+            <div class="section-2-content">
+                <h2>14500</h2>
+                <p>Facebook fans</p>
+            </div>
         </section>
-        <!--TODO:Add more places -->
-        <section>
-        <h3>Places i want to Avoid</h3>
-        <dl>
-            <dt>OOty</dt>
-            <dd>I hear this is <strong>cold</strong></dd>
-            <dt>desert</dt>
-            <dd>I hear this is<strong>hot</strong></dd>
-            <dt>Mountain tops</dt>
-            <dd>There are als cold.</dd>
-
-        </dl>
-    </section>
-    </article>
-    <hr>
-    <article id="contact">
-        <h2>contact Me</h2>
-        <p>I'd really like to hear from you!</p>
-        <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-            <legend>personal info</legend>
-
-        <p>
-            <label for="FirstName">FirstName</label>
-            <input type="text" name="FirstName" id="FirstName" placeholder="jane" autocomplete="on" required>
-         </p>
-         <p>
-        <label for="lastName">LastName</label>
-            <input type="text" name="LastName" id="LastName" placeholder="Doe" autocomplete="on" required>
-        </p>
-        <p>
-        <label for="password">password</label>
-            <input type="text" name="password" id="password" placeholder="your secret"  required>
-        </p>
-        <p>
-        <label for="Phone">Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern0-="[0-9]{3}"[0-9]{3}[0-9]{4} required>
-        </p>
-        <p>
-        <label for="decade"> favorite decade</label>
-            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
-        </p>
-        <p>
-            <label for="coffee">favorite coffee</label>
-            <select name="coffee" id="coffee" multiple size="5">
-                <optgroup label="coffees">
-                <option value="regular coffee">Regular Coffee</option>
-                <option value="iced coffee">Iced Coffee</option>
-                </optgroup>
-                <optgroup label="Espresso Drinks">
-                <option value="latte">Latte</option>
-                <option value="cappuccino">cappuccino</option>
-                <option value="cortado">Cortado</option>
-                <option value="americano">americano</option>
-                </optgroup>
-                <option value="other">other</option>
-            
-            </select>
-        </p>
-        </fieldset>
-         <!-- <p>
-            <label for="coffee">fav coffee:</label>
-            <input type="text" name="coffee" id="coffee" list="coffee-list">
-            <datalist id="coffee-list">
-                <option value="coffee"></option>
-                <option value="latte"></option>
-                <option value="espresso"></option>
-                <option value="cortado"></option>
-                <option value="americano"></option>
-            </datalist>
-         </p> -->
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>what is your fav food?</legend>
-            <p>
-                <input type="radio" name="food" id="tacos" value="tacos">
-                <label for="tacos">tacos</label>
-            </p>
-            <p>
-                <input type="radio" name="food" id="pizza" value="pizza">
-                <label for="pizza">pizza</label>
-            </p>
-            <p>
-                <input type="radio" name="food" id="other" value="other">
-                <label for="other">other</label>
-            </p>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Do you have pets?></legend>
-            <p>
-                <input type="checkbox" name="pets" id="dogs" value="dogs">
-                <label for="dog">dog</label>
-
-            </p>
-            <p>
-                <input type="checkbox" name="pets" id="cat" value="cat">
-                <label for="cat">cat</label>
-
-            </p>
-            <p>
-                <input type="checkbox" name="pets" id="fish" value="fish">
-                <label for="fish">fish</label>
-
-            </p>
-            <p>
-                <input type="checkbox" name="pets" id="otherpet" value="otherpet">
-                <label for="otherpet">otherpet</label>
-
-            </p>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Send me a Note</legend>
-            <label for="message"> your message:</label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
-        </fieldset>
-        <br>
-        <button type="submit">submit</button>
-        <button type submit ></button>
-        <button type="reset" formaction="https://httpbin.org/post" formmethod="post">Reset</button>
-    </form>
-    </article>
+        <section class="section-3" id="section-3">
+            <img src="./about-img.webp" alt="About-img">
+            <div class="section-3-content">
+                <span>WELCOME TO PUBLISHING COMPANY</span>
+                <h2>Publishing Company
+                    Created By Authors</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+                <button>View All Our Authors</button>
+            </div>
+        </section>
+        <section class="section-4" id="section-4">
+            <span>Books</span>
+            <h2>New Release</h2>
+            <div class="books-main-div">
+                <div class="book-div">
+                    <img src="./book-1.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$12.00</span>
+                        <h3>You are your only limit</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+                <div class="book-div">
+                    <img src="./book-2.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$8.00</span>
+                        <h3>101 Essays That Will Change The Way Your Thinks</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+                <div class="book-div">
+                    <img src="./book-3.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$12.00</span>
+                        <h3>Your Soul Is A River</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+            </div>
+            <div class="books-main-div">
+                <div class="book-div">
+                    <img src="./book-4.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$9.00</span>
+                        <h3>All The Letters I Should Have Sent</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+                <div class="book-div">
+                    <img src="./book-5.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$20.00</span>
+                        <h3>Happy</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+                <div class="book-div">
+                    <img src="./book-6.webp" alt="book-content">
+                    <div class="book-content">
+                        <span>$12.00</span>
+                        <h3>Milk & Happy</h3>
+                        <p>By John Nathan Muller</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-        <hr>
-        
-        &lt;&lt;&lt; &copy;<a href="index.html" >Gray</a>  &gt; &gt; &gt; 
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
-    </body>
+    <footer class="footer" id="footer">
+        <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Far far away, behind the word mountains, <br>
+                far from the countries.</p>
+                <div class="icon-div">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+        </div>
+        <div class="footer-box footer-box-2">
+            <h4>Company</h4>
+            <a href="#section-1">Home</a>
+        <a href="#section-3">About</a>
+        <a href="#section-4">New Releases</a>
+        <a href="#footer">Contact</a>
+        </div>
+        <div class="footer-box footer-box-3">
+            <h4>Have questions</h4>
+            <p><i class="fa-solid fa-location-dot"></i> &nbsp; 203 Fake St. Mountain View, San Francisco, California, USA</p>
+            <p><i class="fa-solid fa-phone"></i> &nbsp;+1234567890</p>
+        </div>
+        <p class="copyright-txt">Copyright &copy;2024 All rights reserved | Techie Andrew</p>
+    </footer>
+</body>
 </html>
